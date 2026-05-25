@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="">
+        <h1>Temperature Conversion</h1>
+        <input type="number" id="tempvlaue" value="0"> <br>
+
+        <input type="radio" name="unit" id="FarenheighttoCelcius" checked>
+        <label for=""> Farenheight to Celcius</label> <br>
+
+
+        <input type="radio" name="unit" id="FareheighttoKelvin">
+        <label for="">Farenheight to Kelvin</label><br>
+
+
+        <input type="radio" name="unit" id="CelciustoFarenhight" >
+        <label for="">Celcius to Farenheight</label><br>
+
+        <input type="radio" name="unit" id="CenciustoKelvin" >
+        <label for="">Celcius to Kelvin</label> <br>
+
+
+        <input type="radio" name="unit" id="KelvintoFarenheight">
+        <label for="">Kelvin to Farenheight</label><br>
+
+
+        <input type="radio" name="unit" id="KelvintoCelcius" >
+        <label for="">Kelvin to Celcius</label><br>
+
+        
+
+        <button id=""  onclick="convert()" type="button">
+            Submit
+        </button>
+
+        <p id="result">
+
+        </p>
+
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

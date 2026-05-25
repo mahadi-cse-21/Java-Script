@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+}
+
+h1{
+
+    text-align: center;
+    color: green;
+}
+
+#tempvlaue{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+   
+
+}
+
+button{
+    color: rgb(225, 222, 222);
+    padding: 10px;
+    background-color: rgb(8, 8, 223);
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color , color , scale 0.25s;
+    
+}
+button:hover{
+    background-color: cyan;
+    color: black;
+    scale: 1.15;
+}
+
