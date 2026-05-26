@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Slicing</title>
+</head>
+<body>
+    
+
+
+    <label for="">enter your name</label>
+    <input type="text" id="txt">
+
+
+    <script>
+
+        /*
+        topic:
+        1. string slice
+        2. Capitalization first and other lower case
+        */
+
+    //     const fullname = "mahadi Hassan";
+    //     let firstname = fullname.slice(0,6);
+    //     let lastname = fullname.slice(-6)
+        
+    //     console.log(firstname);
+    //     console.log(lastname);
+
+    //    let firstname1 = fullname.slice(0,fullname.indexOf(" "));
+    //    let lastname1 = fullname.slice(fullname.indexOf(" "));
+    //     console.log(firstname1+lastname1);
+    let txt = document.getElementById('txt');
+    txt.oninput = function(){
+        let name = txt.value;
+        name = name.trim().charAt(0).toUpperCase()+name.trim().slice(1).toLowerCase();
+       txt.value = name; 
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+#txt{
+    text-align: center;
+    color: blue;
+}
+
+body{
+    text-align: center;
+}
+
+#btn{
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+}
+
+#random{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- topic:
+    1. if-else statement  
+    2. terrnary operator
+    -->
+
+    <div style="text-align: center;">
+        <label for="" style="display: block; text-align: center; margin: 10px; font-size: 32px;">Enter your age</label>
+        <input type="number" id="age" style="display: block; text-align: center; margin: 0 auto; margin-bottom: 20px;">
+        <button id="checker" style="padding: 10px; font-size: 20px;">check</button>
+    </div>
+
+    <script>
+
+        let btn = document.getElementById('checker');
+        btn.onclick = function(){
+            let value = document.getElementById('age').value;
+
+            if(value>=18)
+             {
+                window.alert("you are eligible to vote!")
+             }
+             else
+             {
+                window.alert("you are not eligible to vote!!!")
+             }
+        }
+
+        console.log( 1 > 0 ? "this is true": "this is false");
+    </script>
+</body>
+</html>

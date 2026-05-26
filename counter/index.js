@@ -1,3 +1,10 @@
+/*
+
+topic:
+1. Make a counter
+*/
+
+
 let countlabel;
 
 let plus = document.getElementById('plus');

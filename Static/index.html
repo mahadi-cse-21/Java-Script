@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static</title>
+  </head>
+  <body>
+
+<!-- 
+    topic:
+    1. Class
+    2. static
+    3. constractor
+    4. inheritance -->
+    <script>
+      // class MathUtil{
+      //     constructor(x){
+      //         this.x=x;
+      //     }
+      //     static PI = 3.14169;
+      //     static getDiameterOfCircle(radius)
+      //     {
+      //         return 2*radius;
+      //     }
+      //     static getCircumference(radius)
+      //     {
+      //         return 2*this.PI*radius;
+      //     }
+
+      // }
+      // console.log(new MathUtil(10));
+      // console.log(MathUtil.PI);
+      // console.log(MathUtil.getDiameterOfCircle(10));
+      // console.log(MathUtil.getCircumference(10));
+
+      // class User{
+      //     static Usercount = 0;
+      //     constructor(username)
+      //     {
+      //         this.username = username;
+      //         User.Usercount++;
+      //     }
+      // }
+
+      // const user1 = new User("mahadi");
+      // const user2 = new User("hassan");
+      // const user3 = new User("abdullah");
+      // console.log(User.Usercount);
+
+      // class Animal{
+      //     alive = true;
+
+      //     eat(){
+      //         console.log(`This ${this.name} is eating`);
+      //     }
+      //     sleep(){
+      //         console.log(`This ${name} is sleeping`);
+      //     }
+
+      // }
+
+      // class Rabbit extends Animal{
+      //     name = "rabbit";
+      //     run()
+      //     {
+      //         console.log(`This ${this.name} can  run`);
+      //     }
+      // }
+      // class Fish extends Animal{
+      //     name = "fish";
+
+      //     swim(){
+      //         console.log(`This ${this.name} can swin`)
+      //     }
+      // }
+      // class Hawk extends Animal{
+      //     name = "hawk";
+      //     fly(){
+      //         console.log(`This ${this.name} can fly`);
+      //     }
+      // }
+
+      // const rabbit = new Rabbit();
+      // const fish = new Fish();
+      // const hawk = new Hawk();
+
+      // rabbit.alive = false;
+      // console.log(rabbit.alive);
+      // rabbit.eat();
+      // rabbit.sleep();
+      // rabbit.run();
+
+      // fish.swim();
+
+      // hawk.fly();
+
+      class Animal {
+        constructor(name,age) {
+            this.name = name;
+            this.age = age;
+
+            
+        }
+
+        move(speed)
+        {
+            console.log(` The ${this.name} moves at a speed ${speed} mph`);
+        }
+      }
+
+      class Rabbit extends Animal {
+        constructor(name, age, runspeed) {
+            super(name,age);
+          
+          this.runspeed = runspeed;
+        }
+      }
+      class Fish extends Animal {
+        constructor(name, age, swimSpeed) {
+            super(name,age);
+          
+          this.swimSpeed = swimSpeed;
+        }
+      }
+      class Hawk extends Animal {
+        constructor(name, age, flySpeed) {
+            super(name,age);
+          
+          this.flySpeed = flySpeed;
+        }
+      }
+
+      const rabbit = new Rabbit("rabbit", 1, 25);
+      const fish = new Fish("fish", 2, 23);
+      const hawk = new Hawk("hawk", 1, 30);
+
+      console.log(rabbit.name,rabbit.age,rabbit.runspeed);
+      console.log(fish.name,fish.age,fish.runspeed);
+      console.log(hawk.name,hawk.age,hawk.runspeed);
+
+      rabbit.move(rabbit.runspeed);
+      fish.move(fish.swimSpeed);
+      hawk.move(hawk.flySpeed);
+    </script>
+  </body>
+</html>
